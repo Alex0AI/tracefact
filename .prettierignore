@@ -2,4 +2,5 @@ dist
 web-dist
 coverage
 dataset/generated
+dataset/index.json
 package-lock.json

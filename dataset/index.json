@@ -9,28 +9,37 @@
   {
     "path": "synthetic-002.json",
     "label": "test_failure",
-    "expectedFindings": ["test_failure"],
+    "expectedFindings": [
+      "test_failure"
+    ],
     "provenance": "deterministic synthesis",
     "license": "CC0-1.0"
   },
   {
     "path": "synthetic-003.json",
     "label": "loop",
-    "expectedFindings": ["invalid_loop", "repeated_tool_call"],
+    "expectedFindings": [
+      "invalid_loop",
+      "repeated_tool_call"
+    ],
     "provenance": "deterministic synthesis",
     "license": "CC0-1.0"
   },
   {
     "path": "synthetic-004.json",
     "label": "unsupported_completion",
-    "expectedFindings": ["hallucinated_completion"],
+    "expectedFindings": [
+      "hallucinated_completion"
+    ],
     "provenance": "deterministic synthesis",
     "license": "CC0-1.0"
   },
   {
     "path": "synthetic-005.json",
     "label": "cost_spike",
-    "expectedFindings": ["cost_spike"],
+    "expectedFindings": [
+      "cost_spike"
+    ],
     "provenance": "deterministic synthesis",
     "license": "CC0-1.0"
   },
@@ -51,28 +60,37 @@
   {
     "path": "synthetic-008.json",
     "label": "test_failure",
-    "expectedFindings": ["test_failure"],
+    "expectedFindings": [
+      "test_failure"
+    ],
     "provenance": "deterministic synthesis",
     "license": "CC0-1.0"
   },
   {
     "path": "synthetic-009.json",
     "label": "loop",
-    "expectedFindings": ["invalid_loop", "repeated_tool_call"],
+    "expectedFindings": [
+      "invalid_loop",
+      "repeated_tool_call"
+    ],
     "provenance": "deterministic synthesis",
     "license": "CC0-1.0"
   },
   {
     "path": "synthetic-010.json",
     "label": "unsupported_completion",
-    "expectedFindings": ["hallucinated_completion"],
+    "expectedFindings": [
+      "hallucinated_completion"
+    ],
     "provenance": "deterministic synthesis",
     "license": "CC0-1.0"
   },
   {
     "path": "synthetic-011.json",
     "label": "cost_spike",
-    "expectedFindings": ["cost_spike"],
+    "expectedFindings": [
+      "cost_spike"
+    ],
     "provenance": "deterministic synthesis",
     "license": "CC0-1.0"
   },
@@ -93,28 +111,37 @@
   {
     "path": "synthetic-014.json",
     "label": "test_failure",
-    "expectedFindings": ["test_failure"],
+    "expectedFindings": [
+      "test_failure"
+    ],
     "provenance": "deterministic synthesis",
     "license": "CC0-1.0"
   },
   {
     "path": "synthetic-015.json",
     "label": "loop",
-    "expectedFindings": ["invalid_loop", "repeated_tool_call"],
+    "expectedFindings": [
+      "invalid_loop",
+      "repeated_tool_call"
+    ],
     "provenance": "deterministic synthesis",
     "license": "CC0-1.0"
   },
   {
     "path": "synthetic-016.json",
     "label": "unsupported_completion",
-    "expectedFindings": ["hallucinated_completion"],
+    "expectedFindings": [
+      "hallucinated_completion"
+    ],
     "provenance": "deterministic synthesis",
     "license": "CC0-1.0"
   },
   {
     "path": "synthetic-017.json",
     "label": "cost_spike",
-    "expectedFindings": ["cost_spike"],
+    "expectedFindings": [
+      "cost_spike"
+    ],
     "provenance": "deterministic synthesis",
     "license": "CC0-1.0"
   },
@@ -135,28 +162,37 @@
   {
     "path": "synthetic-020.json",
     "label": "test_failure",
-    "expectedFindings": ["test_failure"],
+    "expectedFindings": [
+      "test_failure"
+    ],
     "provenance": "deterministic synthesis",
     "license": "CC0-1.0"
   },
   {
     "path": "synthetic-021.json",
     "label": "loop",
-    "expectedFindings": ["invalid_loop", "repeated_tool_call"],
+    "expectedFindings": [
+      "invalid_loop",
+      "repeated_tool_call"
+    ],
     "provenance": "deterministic synthesis",
     "license": "CC0-1.0"
   },
   {
     "path": "synthetic-022.json",
     "label": "unsupported_completion",
-    "expectedFindings": ["hallucinated_completion"],
+    "expectedFindings": [
+      "hallucinated_completion"
+    ],
     "provenance": "deterministic synthesis",
     "license": "CC0-1.0"
   },
   {
     "path": "synthetic-023.json",
     "label": "cost_spike",
-    "expectedFindings": ["cost_spike"],
+    "expectedFindings": [
+      "cost_spike"
+    ],
     "provenance": "deterministic synthesis",
     "license": "CC0-1.0"
   },
@@ -177,28 +213,37 @@
   {
     "path": "synthetic-026.json",
     "label": "test_failure",
-    "expectedFindings": ["test_failure"],
+    "expectedFindings": [
+      "test_failure"
+    ],
     "provenance": "deterministic synthesis",
     "license": "CC0-1.0"
   },
   {
     "path": "synthetic-027.json",
     "label": "loop",
-    "expectedFindings": ["invalid_loop", "repeated_tool_call"],
+    "expectedFindings": [
+      "invalid_loop",
+      "repeated_tool_call"
+    ],
     "provenance": "deterministic synthesis",
     "license": "CC0-1.0"
   },
   {
     "path": "synthetic-028.json",
     "label": "unsupported_completion",
-    "expectedFindings": ["hallucinated_completion"],
+    "expectedFindings": [
+      "hallucinated_completion"
+    ],
     "provenance": "deterministic synthesis",
     "license": "CC0-1.0"
   },
   {
     "path": "synthetic-029.json",
     "label": "cost_spike",
-    "expectedFindings": ["cost_spike"],
+    "expectedFindings": [
+      "cost_spike"
+    ],
     "provenance": "deterministic synthesis",
     "license": "CC0-1.0"
   },
@@ -219,28 +264,37 @@
   {
     "path": "synthetic-032.json",
     "label": "test_failure",
-    "expectedFindings": ["test_failure"],
+    "expectedFindings": [
+      "test_failure"
+    ],
     "provenance": "deterministic synthesis",
     "license": "CC0-1.0"
   },
   {
     "path": "synthetic-033.json",
     "label": "loop",
-    "expectedFindings": ["invalid_loop", "repeated_tool_call"],
+    "expectedFindings": [
+      "invalid_loop",
+      "repeated_tool_call"
+    ],
     "provenance": "deterministic synthesis",
     "license": "CC0-1.0"
   },
   {
     "path": "synthetic-034.json",
     "label": "unsupported_completion",
-    "expectedFindings": ["hallucinated_completion"],
+    "expectedFindings": [
+      "hallucinated_completion"
+    ],
     "provenance": "deterministic synthesis",
     "license": "CC0-1.0"
   },
   {
     "path": "synthetic-035.json",
     "label": "cost_spike",
-    "expectedFindings": ["cost_spike"],
+    "expectedFindings": [
+      "cost_spike"
+    ],
     "provenance": "deterministic synthesis",
     "license": "CC0-1.0"
   },
@@ -261,28 +315,37 @@
   {
     "path": "synthetic-038.json",
     "label": "test_failure",
-    "expectedFindings": ["test_failure"],
+    "expectedFindings": [
+      "test_failure"
+    ],
     "provenance": "deterministic synthesis",
     "license": "CC0-1.0"
   },
   {
     "path": "synthetic-039.json",
     "label": "loop",
-    "expectedFindings": ["invalid_loop", "repeated_tool_call"],
+    "expectedFindings": [
+      "invalid_loop",
+      "repeated_tool_call"
+    ],
     "provenance": "deterministic synthesis",
     "license": "CC0-1.0"
   },
   {
     "path": "synthetic-040.json",
     "label": "unsupported_completion",
-    "expectedFindings": ["hallucinated_completion"],
+    "expectedFindings": [
+      "hallucinated_completion"
+    ],
     "provenance": "deterministic synthesis",
     "license": "CC0-1.0"
   },
   {
     "path": "synthetic-041.json",
     "label": "cost_spike",
-    "expectedFindings": ["cost_spike"],
+    "expectedFindings": [
+      "cost_spike"
+    ],
     "provenance": "deterministic synthesis",
     "license": "CC0-1.0"
   },
@@ -303,28 +366,37 @@
   {
     "path": "synthetic-044.json",
     "label": "test_failure",
-    "expectedFindings": ["test_failure"],
+    "expectedFindings": [
+      "test_failure"
+    ],
     "provenance": "deterministic synthesis",
     "license": "CC0-1.0"
   },
   {
     "path": "synthetic-045.json",
     "label": "loop",
-    "expectedFindings": ["invalid_loop", "repeated_tool_call"],
+    "expectedFindings": [
+      "invalid_loop",
+      "repeated_tool_call"
+    ],
     "provenance": "deterministic synthesis",
     "license": "CC0-1.0"
   },
   {
     "path": "synthetic-046.json",
     "label": "unsupported_completion",
-    "expectedFindings": ["hallucinated_completion"],
+    "expectedFindings": [
+      "hallucinated_completion"
+    ],
     "provenance": "deterministic synthesis",
     "license": "CC0-1.0"
   },
   {
     "path": "synthetic-047.json",
     "label": "cost_spike",
-    "expectedFindings": ["cost_spike"],
+    "expectedFindings": [
+      "cost_spike"
+    ],
     "provenance": "deterministic synthesis",
     "license": "CC0-1.0"
   },
@@ -345,28 +417,37 @@
   {
     "path": "synthetic-050.json",
     "label": "test_failure",
-    "expectedFindings": ["test_failure"],
+    "expectedFindings": [
+      "test_failure"
+    ],
     "provenance": "deterministic synthesis",
     "license": "CC0-1.0"
   },
   {
     "path": "synthetic-051.json",
     "label": "loop",
-    "expectedFindings": ["invalid_loop", "repeated_tool_call"],
+    "expectedFindings": [
+      "invalid_loop",
+      "repeated_tool_call"
+    ],
     "provenance": "deterministic synthesis",
     "license": "CC0-1.0"
   },
   {
     "path": "synthetic-052.json",
     "label": "unsupported_completion",
-    "expectedFindings": ["hallucinated_completion"],
+    "expectedFindings": [
+      "hallucinated_completion"
+    ],
     "provenance": "deterministic synthesis",
     "license": "CC0-1.0"
   },
   {
     "path": "synthetic-053.json",
     "label": "cost_spike",
-    "expectedFindings": ["cost_spike"],
+    "expectedFindings": [
+      "cost_spike"
+    ],
     "provenance": "deterministic synthesis",
     "license": "CC0-1.0"
   },
@@ -387,28 +468,37 @@
   {
     "path": "synthetic-056.json",
     "label": "test_failure",
-    "expectedFindings": ["test_failure"],
+    "expectedFindings": [
+      "test_failure"
+    ],
     "provenance": "deterministic synthesis",
     "license": "CC0-1.0"
   },
   {
     "path": "synthetic-057.json",
     "label": "loop",
-    "expectedFindings": ["invalid_loop", "repeated_tool_call"],
+    "expectedFindings": [
+      "invalid_loop",
+      "repeated_tool_call"
+    ],
     "provenance": "deterministic synthesis",
     "license": "CC0-1.0"
   },
   {
     "path": "synthetic-058.json",
     "label": "unsupported_completion",
-    "expectedFindings": ["hallucinated_completion"],
+    "expectedFindings": [
+      "hallucinated_completion"
+    ],
     "provenance": "deterministic synthesis",
     "license": "CC0-1.0"
   },
   {
     "path": "synthetic-059.json",
     "label": "cost_spike",
-    "expectedFindings": ["cost_spike"],
+    "expectedFindings": [
+      "cost_spike"
+    ],
     "provenance": "deterministic synthesis",
     "license": "CC0-1.0"
   },
