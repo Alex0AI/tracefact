@@ -2,6 +2,16 @@
 
 All notable changes follow Keep a Changelog; versions follow Semantic Versioning.
 
+## [0.1.2] - 2026-08-20
+
+### Fixed
+
+- Read the CLI version from package metadata instead of a hard-coded string.
+
+### Added
+
+- Cross-platform CLI process test covering analyze, report output, capsule verification, and recovered status.
+
 ## [0.1.1] - 2026-08-20
 
 ### Fixed
@@ -27,3 +37,4 @@ All notable changes follow Keep a Changelog; versions follow Semantic Versioning
 
 [0.1.0]: https://github.com/Alex0AI/tracefact/releases/tag/v0.1.0
 [0.1.1]: https://github.com/Alex0AI/tracefact/releases/tag/v0.1.1
+[0.1.2]: https://github.com/Alex0AI/tracefact/releases/tag/v0.1.2

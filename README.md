@@ -75,7 +75,7 @@ tracefact serve --dir web-dist --port 4173
 ## GitHub Action
 
 ```yaml
-- uses: Alex0AI/tracefact/action@v0.1.1
+- uses: Alex0AI/tracefact/action@v0.1.2
   with:
     trace: artifacts/codex-rollout.jsonl
     adapter: auto

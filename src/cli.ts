@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 import { createServer } from "node:http";
+import { readFileSync } from "node:fs";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { basename, extname, join, resolve } from "node:path";
 import { adapters, importTrace } from "./adapters/index.js";
@@ -12,6 +13,14 @@ import type { AgentTrace } from "./core/types.js";
 import { toHtml } from "./reporters/html.js";
 import { toMarkdown } from "./reporters/markdown.js";
 import { toSarif } from "./reporters/sarif.js";
+
+const cliVersion = String(
+  (
+    JSON.parse(
+      readFileSync(new URL("../package.json", import.meta.url), "utf8"),
+    ) as { version: unknown }
+  ).version,
+);
 
 const argv = process.argv.slice(2);
 const command = argv.shift() ?? "help";
@@ -133,7 +142,7 @@ async function main() {
     );
   } else {
     console.log(
-      `TraceFact 0.1.0\n\nCommands:\n  analyze <trace>   normalize, diagnose, and export HTML/JSON/Markdown/SARIF/capsule\n  replay <capsule>  verify and render an offline replay\n  verify <capsule>  verify capsule integrity\n  migrate <trace>   migrate OATS schema versions\n  adapters          list adapter support\n  serve             serve the local-first dashboard`,
+      `TraceFact ${cliVersion}\n\nCommands:\n  analyze <trace>   normalize, diagnose, and export HTML/JSON/Markdown/SARIF/capsule\n  replay <capsule>  verify and render an offline replay\n  verify <capsule>  verify capsule integrity\n  migrate <trace>   migrate OATS schema versions\n  adapters          list adapter support\n  serve             serve the local-first dashboard`,
     );
   }
 }
