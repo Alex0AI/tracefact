@@ -59,6 +59,13 @@ export function baseTrace(
 ): AgentTrace {
   const first = events[0]?.timestamp ?? context.importedAt;
   const last = events.at(-1)?.timestamp;
+  const lastObservedOutcome = events
+    .filter(
+      (event) =>
+        ["test", "tool_result", "error"].includes(event.kind) &&
+        ["succeeded", "failed"].includes(event.status ?? ""),
+    )
+    .at(-1);
   return {
     schemaVersion: "1.0.0",
     traceId: `${adapter.id}-${first.replace(/\W/g, "").slice(0, 14)}`,
@@ -69,7 +76,12 @@ export function baseTrace(
     },
     startedAt: first,
     ...(last ? { endedAt: last } : {}),
-    status: events.some((e) => e.status === "failed") ? "failure" : "unknown",
+    status:
+      lastObservedOutcome?.status === "succeeded"
+        ? "success"
+        : lastObservedOutcome?.status === "failed"
+          ? "failure"
+          : "unknown",
     source: {
       adapter: adapter.id,
       adapterVersion: adapter.version,

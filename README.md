@@ -8,6 +8,8 @@
 
 ![TraceFact dashboard showing evidence coverage, an evidence graph, timeline, and failure localization](assets/dashboard.png)
 
+![Real TraceFact CLI run analyzing the bundled offline Codex trace and verifying its replay capsule](assets/terminal-demo.gif)
+
 ## The 60-second quick start
 
 ```bash
@@ -73,7 +75,7 @@ tracefact serve --dir web-dist --port 4173
 ## GitHub Action
 
 ```yaml
-- uses: Alex0AI/tracefact/action@v0.1.0
+- uses: Alex0AI/tracefact/action@v0.1.1
   with:
     trace: artifacts/codex-rollout.jsonl
     adapter: auto

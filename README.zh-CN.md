@@ -6,6 +6,8 @@
 
 TraceFact 把 Codex、Gemini CLI、Browser Use、JSONL 与 OpenTelemetry 轨迹转换为统一格式，生成“结论 → 工具结果 / 测试 / diff / 浏览器操作 / 产物哈希”的证据图、确定性失败定位和可校验回放包。默认本地运行，不需要 API Key，也不上传轨迹。
 
+![使用内置离线 Codex 轨迹执行分析并校验回放包的真实 TraceFact CLI 动画](assets/terminal-demo.gif)
+
 ## 60 秒开始
 
 ```bash

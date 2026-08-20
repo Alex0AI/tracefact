@@ -12,6 +12,7 @@ describe("adapters", () => {
     const result = importTrace(input, context);
     expect(result.adapter.id).toBe("codex");
     expect(result.trace.events.some((x) => x.kind === "tool_call")).toBe(true);
+    expect(result.trace.status).toBe("success");
   });
   it("parses Gemini OpenTelemetry spans", () => {
     const input = {
