@@ -1,0 +1,135 @@
+{
+  "schemaVersion": "1.0.0",
+  "traceId": "synthetic-057",
+  "task": {
+    "title": "Synthetic loop case 57"
+  },
+  "startedAt": "2026-07-01T12:00:00.000Z",
+  "endedAt": "2026-07-01T12:00:07.000Z",
+  "status": "success",
+  "source": {
+    "adapter": "tracefact-generator",
+    "adapterVersion": "1.0.0",
+    "format": "oats-json",
+    "url": "https://github.com/Alex0AI/tracefact/blob/main/scripts/generate-dataset.ts",
+    "commitSha": "generated",
+    "importedAt": "2026-07-01T00:00:00.000Z"
+  },
+  "agent": {
+    "name": "deterministic-fixture",
+    "version": "1.0.0"
+  },
+  "environment": {
+    "os": "portable",
+    "runtime": "none",
+    "git": {
+      "commitSha": "generated"
+    }
+  },
+  "events": [
+    {
+      "id": "user",
+      "timestamp": "2026-07-01T12:00:00.000Z",
+      "kind": "message",
+      "actor": "user",
+      "content": "Deterministic task 57: update and verify calculator behavior."
+    },
+    {
+      "id": "loop-0",
+      "timestamp": "2026-07-01T12:00:01.000Z",
+      "kind": "tool_call",
+      "actor": "assistant",
+      "name": "search",
+      "status": "started",
+      "input": {
+        "query": "calculator"
+      }
+    },
+    {
+      "id": "loop-1",
+      "timestamp": "2026-07-01T12:00:02.000Z",
+      "kind": "tool_call",
+      "actor": "assistant",
+      "name": "read_file",
+      "status": "started",
+      "input": {
+        "query": "calculator"
+      }
+    },
+    {
+      "id": "loop-2",
+      "timestamp": "2026-07-01T12:00:03.000Z",
+      "kind": "tool_call",
+      "actor": "assistant",
+      "name": "search",
+      "status": "started",
+      "input": {
+        "query": "calculator"
+      }
+    },
+    {
+      "id": "loop-3",
+      "timestamp": "2026-07-01T12:00:04.000Z",
+      "kind": "tool_call",
+      "actor": "assistant",
+      "name": "read_file",
+      "status": "started",
+      "input": {
+        "query": "calculator"
+      }
+    },
+    {
+      "id": "loop-4",
+      "timestamp": "2026-07-01T12:00:05.000Z",
+      "kind": "tool_call",
+      "actor": "assistant",
+      "name": "search",
+      "status": "started",
+      "input": {
+        "query": "calculator"
+      }
+    },
+    {
+      "id": "loop-5",
+      "timestamp": "2026-07-01T12:00:06.000Z",
+      "kind": "tool_call",
+      "actor": "assistant",
+      "name": "read_file",
+      "status": "started",
+      "input": {
+        "query": "calculator"
+      }
+    },
+    {
+      "id": "loop-6",
+      "timestamp": "2026-07-01T12:00:07.000Z",
+      "kind": "tool_call",
+      "actor": "assistant",
+      "name": "search",
+      "status": "started",
+      "input": {
+        "query": "calculator"
+      }
+    },
+    {
+      "id": "loop-7",
+      "timestamp": "2026-07-01T12:00:08.000Z",
+      "kind": "tool_call",
+      "actor": "assistant",
+      "name": "read_file",
+      "status": "started",
+      "input": {
+        "query": "calculator"
+      }
+    }
+  ],
+  "artifacts": [
+    {
+      "name": "fixture",
+      "sha256": "fixture-57"
+    }
+  ],
+  "labels": {
+    "groundTruth": "loop"
+  }
+}

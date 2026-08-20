@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+title: "TraceFact: Evidence-Linked Reliability Reports and Replay for Agent Runs"
+message: "If TraceFact supports your research, please cite the software release."
+type: software
+version: 0.1.0
+date-released: 2026-08-20
+license: Apache-2.0
+repository-code: "https://github.com/Alex0AI/tracefact"
+url: "https://alex0ai.github.io/tracefact/"
+authors:
+  - name: "TraceFact contributors"

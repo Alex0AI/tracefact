@@ -1,0 +1,37 @@
+{
+  "dataset": 60,
+  "truePositive": 50,
+  "falsePositive": 10,
+  "falseNegative": 0,
+  "precision": 0.8333333333333334,
+  "recall": 1,
+  "f1": 0.9090909090909091,
+  "perRule": {
+    "test_failure": {
+      "tp": 10,
+      "fp": 0,
+      "fn": 0
+    },
+    "hallucinated_completion": {
+      "tp": 10,
+      "fp": 10,
+      "fn": 0
+    },
+    "repeated_tool_call": {
+      "tp": 10,
+      "fp": 0,
+      "fn": 0
+    },
+    "invalid_loop": {
+      "tp": 10,
+      "fp": 0,
+      "fn": 0
+    },
+    "cost_spike": {
+      "tp": 10,
+      "fp": 0,
+      "fn": 0
+    }
+  },
+  "limitation": "These are rule-authored deterministic synthetic traces. Results measure implementation agreement with labels, not real-world generalization."
+}

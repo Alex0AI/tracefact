@@ -1,0 +1,119 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tracefact.dev/schema/open-agent-trace-1.0.0.json",
+  "title": "Open Agent Trace Schema",
+  "description": "Provider-, model-, and benchmark-neutral recorded agent run.",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "traceId",
+    "task",
+    "startedAt",
+    "status",
+    "source",
+    "agent",
+    "events"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "1.0.0" },
+    "traceId": { "type": "string", "minLength": 1 },
+    "task": {
+      "type": "object",
+      "required": ["title"],
+      "properties": {
+        "title": { "type": "string" },
+        "description": { "type": "string" },
+        "expected": { "type": "array", "items": { "type": "string" } }
+      },
+      "additionalProperties": true
+    },
+    "startedAt": { "type": "string", "format": "date-time" },
+    "endedAt": { "type": "string", "format": "date-time" },
+    "status": { "enum": ["success", "failure", "partial", "unknown"] },
+    "source": { "$ref": "#/$defs/source" },
+    "agent": {
+      "type": "object",
+      "required": ["name"],
+      "properties": {
+        "name": { "type": "string" },
+        "version": { "type": "string" },
+        "model": { "type": "string" },
+        "provider": { "type": "string" }
+      },
+      "additionalProperties": true
+    },
+    "environment": { "type": "object", "additionalProperties": true },
+    "events": { "type": "array", "items": { "$ref": "#/$defs/event" } },
+    "artifacts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "sha256"],
+        "additionalProperties": true
+      }
+    },
+    "labels": {
+      "type": "object",
+      "additionalProperties": { "type": "string" }
+    },
+    "extensions": { "type": "object", "additionalProperties": true }
+  },
+  "additionalProperties": true,
+  "$defs": {
+    "source": {
+      "type": "object",
+      "required": ["adapter", "adapterVersion", "importedAt"],
+      "properties": {
+        "adapter": { "type": "string" },
+        "adapterVersion": { "type": "string" },
+        "provider": { "type": "string" },
+        "format": { "type": "string" },
+        "url": { "type": "string" },
+        "commitSha": { "type": "string" },
+        "importedAt": { "type": "string", "format": "date-time" }
+      },
+      "additionalProperties": true
+    },
+    "event": {
+      "type": "object",
+      "required": ["id", "kind", "timestamp"],
+      "properties": {
+        "id": { "type": "string" },
+        "parentId": { "type": "string" },
+        "kind": {
+          "enum": [
+            "message",
+            "tool_call",
+            "tool_result",
+            "file_change",
+            "test",
+            "browser_action",
+            "error",
+            "artifact",
+            "claim",
+            "metric"
+          ]
+        },
+        "timestamp": { "type": "string", "format": "date-time" },
+        "durationMs": { "type": "number", "minimum": 0 },
+        "actor": { "enum": ["user", "assistant", "system", "tool", "browser"] },
+        "name": { "type": "string" },
+        "status": {
+          "enum": ["started", "succeeded", "failed", "cancelled", "unknown"]
+        },
+        "input": true,
+        "output": true,
+        "content": { "type": "string" },
+        "error": { "type": "object", "additionalProperties": true },
+        "file": { "type": "object", "additionalProperties": true },
+        "test": { "type": "object", "additionalProperties": true },
+        "browser": { "type": "object", "additionalProperties": true },
+        "artifact": { "type": "object", "additionalProperties": true },
+        "usage": { "type": "object", "additionalProperties": true },
+        "tags": { "type": "array", "items": { "type": "string" } },
+        "attributes": { "type": "object", "additionalProperties": true }
+      },
+      "additionalProperties": true
+    }
+  }
+}

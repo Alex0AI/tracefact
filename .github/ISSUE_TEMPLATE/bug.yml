@@ -1,0 +1,34 @@
+name: Bug report
+description: Report a reproducible TraceFact defect using synthetic or redacted data.
+title: "bug: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      {
+        value: "Never attach a private trace or secret. Build a minimal synthetic reproducer.",
+      }
+  - type: input
+    id: version
+    attributes: { label: TraceFact version }
+    validations: { required: true }
+  - type: dropdown
+    id: surface
+    attributes:
+      {
+        label: Surface,
+        options: [CLI, Web, Adapter, MCP, GitHub Action, Schema, Report],
+      }
+    validations: { required: true }
+  - type: textarea
+    id: reproduce
+    attributes:
+      {
+        label: Reproduction,
+        description: Include commands and a minimal redacted fixture.,
+      }
+    validations: { required: true }
+  - type: textarea
+    id: expected
+    attributes: { label: Expected and actual behavior }
+    validations: { required: true }

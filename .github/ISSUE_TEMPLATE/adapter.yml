@@ -1,0 +1,28 @@
+name: Adapter compatibility
+description: Propose or repair a provider trace adapter.
+title: "adapter: "
+labels: [adapter]
+body:
+  - type: input
+    id: upstream
+    attributes: { label: Upstream repository and exact commit/release }
+    validations: { required: true }
+  - type: input
+    id: license
+    attributes: { label: License and public format documentation }
+    validations: { required: true }
+  - type: textarea
+    id: fixture
+    attributes:
+      {
+        label: Redistributable minimal fixture,
+        description: Confirm it is synthetic/public/consented and fully redacted.,
+      }
+    validations: { required: true }
+  - type: checkboxes
+    id: consent
+    attributes:
+      label: Data rights
+      options:
+        - label: I have the right to redistribute this fixture and it contains no secrets or personal data.
+          required: true

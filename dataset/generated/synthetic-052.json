@@ -1,0 +1,54 @@
+{
+  "schemaVersion": "1.0.0",
+  "traceId": "synthetic-052",
+  "task": {
+    "title": "Synthetic unsupported_completion case 52"
+  },
+  "startedAt": "2026-07-01T12:00:00.000Z",
+  "endedAt": "2026-07-01T12:00:07.000Z",
+  "status": "success",
+  "source": {
+    "adapter": "tracefact-generator",
+    "adapterVersion": "1.0.0",
+    "format": "oats-json",
+    "url": "https://github.com/Alex0AI/tracefact/blob/main/scripts/generate-dataset.ts",
+    "commitSha": "generated",
+    "importedAt": "2026-07-01T00:00:00.000Z"
+  },
+  "agent": {
+    "name": "deterministic-fixture",
+    "version": "1.0.0"
+  },
+  "environment": {
+    "os": "portable",
+    "runtime": "none",
+    "git": {
+      "commitSha": "generated"
+    }
+  },
+  "events": [
+    {
+      "id": "user",
+      "timestamp": "2026-07-01T12:00:00.000Z",
+      "kind": "message",
+      "actor": "user",
+      "content": "Deterministic task 52: update and verify calculator behavior."
+    },
+    {
+      "id": "done",
+      "timestamp": "2026-07-01T12:00:02.000Z",
+      "kind": "claim",
+      "actor": "assistant",
+      "content": "The calculator task is completed successfully."
+    }
+  ],
+  "artifacts": [
+    {
+      "name": "fixture",
+      "sha256": "fixture-52"
+    }
+  ],
+  "labels": {
+    "groundTruth": "unsupported_completion"
+  }
+}

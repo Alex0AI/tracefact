@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Turn coding and browser agent traces into evidence-linked reliability reports—locally, without an API key."
+    />
+    <title>TraceFact — evidence, not vibes, for agent runs</title>
+    <link rel="icon" href="./mark.svg" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="noise"></div>
+    <header>
+      <a class="logo" href="#"
+        ><img src="./mark.svg" alt="" />Trace<span>Fact</span></a
+      >
+      <nav>
+        <a href="#report">Live report</a
+        ><a href="https://github.com/Alex0AI/tracefact">GitHub ↗</a>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="eyebrow"><i></i> LOCAL-FIRST AGENT RELIABILITY</div>
+        <h1>
+          Did your agent <em>do it</em>—<br />or just <span>say it did?</span>
+        </h1>
+        <p>
+          Drop a Codex, Gemini CLI, Browser Use, JSONL, or OpenTelemetry trace.
+          Get a claim-to-evidence graph, failure localization, costs, and a
+          reproducible replay—without uploading the run or asking another LLM to
+          judge it.
+        </p>
+        <div class="flow">
+          <div><b>01</b><span>INPUT</span><strong>Agent trace</strong></div>
+          <div class="arrow">→</div>
+          <div>
+            <b>02</b><span>VERIFY</span><strong>Observable facts</strong>
+          </div>
+          <div class="arrow">→</div>
+          <div>
+            <b>03</b><span>OUTPUT</span><strong>Shareable report</strong>
+          </div>
+        </div>
+        <label class="drop" id="drop"
+          ><input id="file" type="file" accept=".json,.jsonl,.gz" /><span
+            class="drop-icon"
+            >↳</span
+          ><strong>Drop a trace to inspect it</strong
+          ><small
+            >Files stay in this browser · or <u>choose a file</u></small
+          ></label
+        >
+        <button id="demo" class="ghost">
+          Explore the offline demo <span>→</span>
+        </button>
+      </section>
+      <section class="trust">
+        <span>WHY TRUST IT</span>
+        <div>
+          <b>No opaque judge</b><small>Every diagnosis cites event IDs.</small>
+        </div>
+        <div>
+          <b>Content-addressed</b
+          ><small>Replay packages verify with SHA-256.</small>
+        </div>
+        <div>
+          <b>Benchmark-neutral</b><small>Unlike scores are never merged.</small>
+        </div>
+      </section>
+      <section id="report" class="report hidden">
+        <div class="report-head">
+          <div>
+            <span class="kicker">LIVE RELIABILITY REPORT</span>
+            <h2 id="task">Run report</h2>
+            <p id="meta"></p>
+          </div>
+          <button id="export">Export standalone HTML</button>
+        </div>
+        <div class="metrics" id="metrics"></div>
+        <div class="report-grid">
+          <div>
+            <article>
+              <div class="article-title">
+                <h3>Evidence graph</h3>
+                <span id="claim-count"></span>
+              </div>
+              <div id="claims"></div>
+            </article>
+            <article>
+              <div class="article-title">
+                <h3>Timeline</h3>
+                <span id="event-count"></span>
+              </div>
+              <div id="timeline"></div>
+            </article>
+          </div>
+          <aside>
+            <article>
+              <div class="article-title">
+                <h3>Failure localization</h3>
+                <span id="finding-count"></span>
+              </div>
+              <div id="findings"></div>
+            </article>
+            <article>
+              <h3>Integrity & uncertainty</h3>
+              <div id="integrity" class="mono"></div>
+            </article>
+          </aside>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="logo">
+        <img src="./mark.svg" alt="" />Trace<span>Fact</span>
+      </div>
+      <p>Evidence, not vibes, for agent runs.</p>
+      <span>Apache-2.0 · No telemetry · No API key</span>
+    </footer>
+    <script type="module" src="./app.ts"></script>
+  </body>
+</html>

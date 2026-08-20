@@ -1,0 +1,422 @@
+[
+  {
+    "path": "synthetic-001.json",
+    "label": "success",
+    "expectedFindings": [],
+    "provenance": "deterministic synthesis",
+    "license": "CC0-1.0"
+  },
+  {
+    "path": "synthetic-002.json",
+    "label": "test_failure",
+    "expectedFindings": ["test_failure"],
+    "provenance": "deterministic synthesis",
+    "license": "CC0-1.0"
+  },
+  {
+    "path": "synthetic-003.json",
+    "label": "loop",
+    "expectedFindings": ["invalid_loop", "repeated_tool_call"],
+    "provenance": "deterministic synthesis",
+    "license": "CC0-1.0"
+  },
+  {
+    "path": "synthetic-004.json",
+    "label": "unsupported_completion",
+    "expectedFindings": ["hallucinated_completion"],
+    "provenance": "deterministic synthesis",
+    "license": "CC0-1.0"
+  },
+  {
+    "path": "synthetic-005.json",
+    "label": "cost_spike",
+    "expectedFindings": ["cost_spike"],
+    "provenance": "deterministic synthesis",
+    "license": "CC0-1.0"
+  },
+  {
+    "path": "synthetic-006.json",
+    "label": "recovery_success",
+    "expectedFindings": [],
+    "provenance": "deterministic synthesis",
+    "license": "CC0-1.0"
+  },
+  {
+    "path": "synthetic-007.json",
+    "label": "success",
+    "expectedFindings": [],
+    "provenance": "deterministic synthesis",
+    "license": "CC0-1.0"
+  },
+  {
+    "path": "synthetic-008.json",
+    "label": "test_failure",
+    "expectedFindings": ["test_failure"],
+    "provenance": "deterministic synthesis",
+    "license": "CC0-1.0"
+  },
+  {
+    "path": "synthetic-009.json",
+    "label": "loop",
+    "expectedFindings": ["invalid_loop", "repeated_tool_call"],
+    "provenance": "deterministic synthesis",
+    "license": "CC0-1.0"
+  },
+  {
+    "path": "synthetic-010.json",
+    "label": "unsupported_completion",
+    "expectedFindings": ["hallucinated_completion"],
+    "provenance": "deterministic synthesis",
+    "license": "CC0-1.0"
+  },
+  {
+    "path": "synthetic-011.json",
+    "label": "cost_spike",
+    "expectedFindings": ["cost_spike"],
+    "provenance": "deterministic synthesis",
+    "license": "CC0-1.0"
+  },
+  {
+    "path": "synthetic-012.json",
+    "label": "recovery_success",
+    "expectedFindings": [],
+    "provenance": "deterministic synthesis",
+    "license": "CC0-1.0"
+  },
+  {
+    "path": "synthetic-013.json",
+    "label": "success",
+    "expectedFindings": [],
+    "provenance": "deterministic synthesis",
+    "license": "CC0-1.0"
+  },
+  {
+    "path": "synthetic-014.json",
+    "label": "test_failure",
+    "expectedFindings": ["test_failure"],
+    "provenance": "deterministic synthesis",
+    "license": "CC0-1.0"
+  },
+  {
+    "path": "synthetic-015.json",
+    "label": "loop",
+    "expectedFindings": ["invalid_loop", "repeated_tool_call"],
+    "provenance": "deterministic synthesis",
+    "license": "CC0-1.0"
+  },
+  {
+    "path": "synthetic-016.json",
+    "label": "unsupported_completion",
+    "expectedFindings": ["hallucinated_completion"],
+    "provenance": "deterministic synthesis",
+    "license": "CC0-1.0"
+  },
+  {
+    "path": "synthetic-017.json",
+    "label": "cost_spike",
+    "expectedFindings": ["cost_spike"],
+    "provenance": "deterministic synthesis",
+    "license": "CC0-1.0"
+  },
+  {
+    "path": "synthetic-018.json",
+    "label": "recovery_success",
+    "expectedFindings": [],
+    "provenance": "deterministic synthesis",
+    "license": "CC0-1.0"
+  },
+  {
+    "path": "synthetic-019.json",
+    "label": "success",
+    "expectedFindings": [],
+    "provenance": "deterministic synthesis",
+    "license": "CC0-1.0"
+  },
+  {
+    "path": "synthetic-020.json",
+    "label": "test_failure",
+    "expectedFindings": ["test_failure"],
+    "provenance": "deterministic synthesis",
+    "license": "CC0-1.0"
+  },
+  {
+    "path": "synthetic-021.json",
+    "label": "loop",
+    "expectedFindings": ["invalid_loop", "repeated_tool_call"],
+    "provenance": "deterministic synthesis",
+    "license": "CC0-1.0"
+  },
+  {
+    "path": "synthetic-022.json",
+    "label": "unsupported_completion",
+    "expectedFindings": ["hallucinated_completion"],
+    "provenance": "deterministic synthesis",
+    "license": "CC0-1.0"
+  },
+  {
+    "path": "synthetic-023.json",
+    "label": "cost_spike",
+    "expectedFindings": ["cost_spike"],
+    "provenance": "deterministic synthesis",
+    "license": "CC0-1.0"
+  },
+  {
+    "path": "synthetic-024.json",
+    "label": "recovery_success",
+    "expectedFindings": [],
+    "provenance": "deterministic synthesis",
+    "license": "CC0-1.0"
+  },
+  {
+    "path": "synthetic-025.json",
+    "label": "success",
+    "expectedFindings": [],
+    "provenance": "deterministic synthesis",
+    "license": "CC0-1.0"
+  },
+  {
+    "path": "synthetic-026.json",
+    "label": "test_failure",
+    "expectedFindings": ["test_failure"],
+    "provenance": "deterministic synthesis",
+    "license": "CC0-1.0"
+  },
+  {
+    "path": "synthetic-027.json",
+    "label": "loop",
+    "expectedFindings": ["invalid_loop", "repeated_tool_call"],
+    "provenance": "deterministic synthesis",
+    "license": "CC0-1.0"
+  },
+  {
+    "path": "synthetic-028.json",
+    "label": "unsupported_completion",
+    "expectedFindings": ["hallucinated_completion"],
+    "provenance": "deterministic synthesis",
+    "license": "CC0-1.0"
+  },
+  {
+    "path": "synthetic-029.json",
+    "label": "cost_spike",
+    "expectedFindings": ["cost_spike"],
+    "provenance": "deterministic synthesis",
+    "license": "CC0-1.0"
+  },
+  {
+    "path": "synthetic-030.json",
+    "label": "recovery_success",
+    "expectedFindings": [],
+    "provenance": "deterministic synthesis",
+    "license": "CC0-1.0"
+  },
+  {
+    "path": "synthetic-031.json",
+    "label": "success",
+    "expectedFindings": [],
+    "provenance": "deterministic synthesis",
+    "license": "CC0-1.0"
+  },
+  {
+    "path": "synthetic-032.json",
+    "label": "test_failure",
+    "expectedFindings": ["test_failure"],
+    "provenance": "deterministic synthesis",
+    "license": "CC0-1.0"
+  },
+  {
+    "path": "synthetic-033.json",
+    "label": "loop",
+    "expectedFindings": ["invalid_loop", "repeated_tool_call"],
+    "provenance": "deterministic synthesis",
+    "license": "CC0-1.0"
+  },
+  {
+    "path": "synthetic-034.json",
+    "label": "unsupported_completion",
+    "expectedFindings": ["hallucinated_completion"],
+    "provenance": "deterministic synthesis",
+    "license": "CC0-1.0"
+  },
+  {
+    "path": "synthetic-035.json",
+    "label": "cost_spike",
+    "expectedFindings": ["cost_spike"],
+    "provenance": "deterministic synthesis",
+    "license": "CC0-1.0"
+  },
+  {
+    "path": "synthetic-036.json",
+    "label": "recovery_success",
+    "expectedFindings": [],
+    "provenance": "deterministic synthesis",
+    "license": "CC0-1.0"
+  },
+  {
+    "path": "synthetic-037.json",
+    "label": "success",
+    "expectedFindings": [],
+    "provenance": "deterministic synthesis",
+    "license": "CC0-1.0"
+  },
+  {
+    "path": "synthetic-038.json",
+    "label": "test_failure",
+    "expectedFindings": ["test_failure"],
+    "provenance": "deterministic synthesis",
+    "license": "CC0-1.0"
+  },
+  {
+    "path": "synthetic-039.json",
+    "label": "loop",
+    "expectedFindings": ["invalid_loop", "repeated_tool_call"],
+    "provenance": "deterministic synthesis",
+    "license": "CC0-1.0"
+  },
+  {
+    "path": "synthetic-040.json",
+    "label": "unsupported_completion",
+    "expectedFindings": ["hallucinated_completion"],
+    "provenance": "deterministic synthesis",
+    "license": "CC0-1.0"
+  },
+  {
+    "path": "synthetic-041.json",
+    "label": "cost_spike",
+    "expectedFindings": ["cost_spike"],
+    "provenance": "deterministic synthesis",
+    "license": "CC0-1.0"
+  },
+  {
+    "path": "synthetic-042.json",
+    "label": "recovery_success",
+    "expectedFindings": [],
+    "provenance": "deterministic synthesis",
+    "license": "CC0-1.0"
+  },
+  {
+    "path": "synthetic-043.json",
+    "label": "success",
+    "expectedFindings": [],
+    "provenance": "deterministic synthesis",
+    "license": "CC0-1.0"
+  },
+  {
+    "path": "synthetic-044.json",
+    "label": "test_failure",
+    "expectedFindings": ["test_failure"],
+    "provenance": "deterministic synthesis",
+    "license": "CC0-1.0"
+  },
+  {
+    "path": "synthetic-045.json",
+    "label": "loop",
+    "expectedFindings": ["invalid_loop", "repeated_tool_call"],
+    "provenance": "deterministic synthesis",
+    "license": "CC0-1.0"
+  },
+  {
+    "path": "synthetic-046.json",
+    "label": "unsupported_completion",
+    "expectedFindings": ["hallucinated_completion"],
+    "provenance": "deterministic synthesis",
+    "license": "CC0-1.0"
+  },
+  {
+    "path": "synthetic-047.json",
+    "label": "cost_spike",
+    "expectedFindings": ["cost_spike"],
+    "provenance": "deterministic synthesis",
+    "license": "CC0-1.0"
+  },
+  {
+    "path": "synthetic-048.json",
+    "label": "recovery_success",
+    "expectedFindings": [],
+    "provenance": "deterministic synthesis",
+    "license": "CC0-1.0"
+  },
+  {
+    "path": "synthetic-049.json",
+    "label": "success",
+    "expectedFindings": [],
+    "provenance": "deterministic synthesis",
+    "license": "CC0-1.0"
+  },
+  {
+    "path": "synthetic-050.json",
+    "label": "test_failure",
+    "expectedFindings": ["test_failure"],
+    "provenance": "deterministic synthesis",
+    "license": "CC0-1.0"
+  },
+  {
+    "path": "synthetic-051.json",
+    "label": "loop",
+    "expectedFindings": ["invalid_loop", "repeated_tool_call"],
+    "provenance": "deterministic synthesis",
+    "license": "CC0-1.0"
+  },
+  {
+    "path": "synthetic-052.json",
+    "label": "unsupported_completion",
+    "expectedFindings": ["hallucinated_completion"],
+    "provenance": "deterministic synthesis",
+    "license": "CC0-1.0"
+  },
+  {
+    "path": "synthetic-053.json",
+    "label": "cost_spike",
+    "expectedFindings": ["cost_spike"],
+    "provenance": "deterministic synthesis",
+    "license": "CC0-1.0"
+  },
+  {
+    "path": "synthetic-054.json",
+    "label": "recovery_success",
+    "expectedFindings": [],
+    "provenance": "deterministic synthesis",
+    "license": "CC0-1.0"
+  },
+  {
+    "path": "synthetic-055.json",
+    "label": "success",
+    "expectedFindings": [],
+    "provenance": "deterministic synthesis",
+    "license": "CC0-1.0"
+  },
+  {
+    "path": "synthetic-056.json",
+    "label": "test_failure",
+    "expectedFindings": ["test_failure"],
+    "provenance": "deterministic synthesis",
+    "license": "CC0-1.0"
+  },
+  {
+    "path": "synthetic-057.json",
+    "label": "loop",
+    "expectedFindings": ["invalid_loop", "repeated_tool_call"],
+    "provenance": "deterministic synthesis",
+    "license": "CC0-1.0"
+  },
+  {
+    "path": "synthetic-058.json",
+    "label": "unsupported_completion",
+    "expectedFindings": ["hallucinated_completion"],
+    "provenance": "deterministic synthesis",
+    "license": "CC0-1.0"
+  },
+  {
+    "path": "synthetic-059.json",
+    "label": "cost_spike",
+    "expectedFindings": ["cost_spike"],
+    "provenance": "deterministic synthesis",
+    "license": "CC0-1.0"
+  },
+  {
+    "path": "synthetic-060.json",
+    "label": "recovery_success",
+    "expectedFindings": [],
+    "provenance": "deterministic synthesis",
+    "license": "CC0-1.0"
+  }
+]

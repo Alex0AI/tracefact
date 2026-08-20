@@ -1,0 +1,103 @@
+{
+  "schemaVersion": "1.0.0",
+  "traceId": "synthetic-059",
+  "task": {
+    "title": "Synthetic cost_spike case 59"
+  },
+  "startedAt": "2026-07-01T12:00:00.000Z",
+  "endedAt": "2026-07-01T12:00:07.000Z",
+  "status": "success",
+  "source": {
+    "adapter": "tracefact-generator",
+    "adapterVersion": "1.0.0",
+    "format": "oats-json",
+    "url": "https://github.com/Alex0AI/tracefact/blob/main/scripts/generate-dataset.ts",
+    "commitSha": "generated",
+    "importedAt": "2026-07-01T00:00:00.000Z"
+  },
+  "agent": {
+    "name": "deterministic-fixture",
+    "version": "1.0.0"
+  },
+  "environment": {
+    "os": "portable",
+    "runtime": "none",
+    "git": {
+      "commitSha": "generated"
+    }
+  },
+  "events": [
+    {
+      "id": "user",
+      "timestamp": "2026-07-01T12:00:00.000Z",
+      "kind": "message",
+      "actor": "user",
+      "content": "Deterministic task 59: update and verify calculator behavior."
+    },
+    {
+      "id": "call",
+      "timestamp": "2026-07-01T12:00:01.000Z",
+      "kind": "tool_call",
+      "actor": "assistant",
+      "name": "edit_file",
+      "status": "started",
+      "input": {
+        "path": "src/calculator.ts"
+      }
+    },
+    {
+      "id": "change",
+      "timestamp": "2026-07-01T12:00:02.000Z",
+      "kind": "file_change",
+      "actor": "tool",
+      "name": "src/calculator.ts",
+      "status": "succeeded",
+      "file": {
+        "path": "src/calculator.ts",
+        "operation": "update",
+        "diff": "+ return round(total)"
+      }
+    },
+    {
+      "id": "test",
+      "timestamp": "2026-07-01T12:00:03.000Z",
+      "kind": "test",
+      "actor": "tool",
+      "name": "npm test",
+      "status": "succeeded",
+      "test": {
+        "command": "npm test",
+        "passed": 5,
+        "failed": 0
+      }
+    },
+    {
+      "id": "model",
+      "timestamp": "2026-07-01T12:00:04.000Z",
+      "kind": "metric",
+      "actor": "assistant",
+      "status": "succeeded",
+      "usage": {
+        "inputTokens": 900000,
+        "outputTokens": 50000,
+        "costUsd": 12.5
+      }
+    },
+    {
+      "id": "done",
+      "timestamp": "2026-07-01T12:00:06.000Z",
+      "kind": "claim",
+      "actor": "assistant",
+      "content": "The calculator update is completed and tests passed."
+    }
+  ],
+  "artifacts": [
+    {
+      "name": "fixture",
+      "sha256": "fixture-59"
+    }
+  ],
+  "labels": {
+    "groundTruth": "cost_spike"
+  }
+}
